@@ -32,6 +32,7 @@ namespace _09_Portfolio
 
             Assert.AreEqual(56.67, s.PricePerShare);
         }
+        
         [TestMethod]
         public void CanSetAndGetNumShares()
         {
@@ -54,7 +55,6 @@ namespace _09_Portfolio
             Assert.AreEqual(60, stockYHOO.NumShares);
             Assert.AreEqual(43.33 * 60, stockYHOO.GetValue());
         }
-
         [TestMethod]
         public void CanCreateMultipleInstances()
         {

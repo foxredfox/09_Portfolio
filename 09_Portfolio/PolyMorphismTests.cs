@@ -7,7 +7,7 @@ namespace _09_Portfolio
     //we will be creating here.
 
     //THESE ARE THE SECOND TESTS YOU SHOULD DO 
-
+/*
     [TestClass]
     public class PolymorphismTests
     {
@@ -56,4 +56,5 @@ namespace _09_Portfolio
 
 
     }
+*/
 }
