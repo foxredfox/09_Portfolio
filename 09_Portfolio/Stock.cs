@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _09_Portfolio
 {
-    class Stock
+    class Stock : Asset
     {
         public String Symbol{ get; set; }
         public double PricePerShare{ get; set; }
@@ -25,33 +25,29 @@ namespace _09_Portfolio
             return NumShares * PricePerShare;
         }
 
-        public static double TotalValue(Stock[] stocks)
+        public static double TotalValue(Asset[] stocks)
         {
-            double total = 0.0;
-
-            foreach(Stock stock in stocks){
-                total += stock.GetValue();
-            }
-
-            return total;
+            return stocks.Sum(stock => stock.GetValue());
         }
+
+        public override int GetHashCode(){ return base.GetHashCode(); }
 
         public override String ToString()
         {
             return 
-                "Stock[symbol="+Symbol+","+
-                "pricePerShare="+PricePerShare.ToString().Replace(',', '.')+","+
-                "numShares="+NumShares+"]";
+                "Stock[symbol="+ Symbol +
+                ",pricePerShare="+ PricePerShare.ToString().Replace(',', '.') + 
+                ",numShares="+ NumShares +"]";
         }
 
         public override bool Equals(object stock)
         {
-            bool equal = true;
+            bool  equal   = true;
             Stock _stock = (Stock)stock;
             
             if(_stock.Symbol != Symbol)
                 equal = false;
-                
+
             if(_stock.PricePerShare != PricePerShare)
                 equal = false;
                 

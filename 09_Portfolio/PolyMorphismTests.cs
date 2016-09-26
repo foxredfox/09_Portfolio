@@ -7,7 +7,7 @@ namespace _09_Portfolio
     //we will be creating here.
 
     //THESE ARE THE SECOND TESTS YOU SHOULD DO 
-/*
+
     [TestClass]
     public class PolymorphismTests
     {
@@ -32,6 +32,7 @@ namespace _09_Portfolio
             Assert.AreEqual(1000, cd.GetValue());
             Assert.AreEqual(4.2, cd.InterestRate);
         }
+        
 
         [TestMethod]
         public void CDInterest()
@@ -54,7 +55,6 @@ namespace _09_Portfolio
             Assert.AreEqual(9809.1, Stock.TotalValue(portfolio));
         }
 
-
     }
-*/
+
 }

@@ -9,7 +9,7 @@ namespace _09_Portfolio
     //we will be creating here.
 
     //THESE ARE THE THIRD TESTS YOU SHOULD DO 
-/*
+
     [TestClass]
     public class PortFolioTests
     {
@@ -38,7 +38,6 @@ namespace _09_Portfolio
             Assert.AreEqual(9809.1, portfolio.GetTotalValue());
         }
 
-       
     }
-*/
+
 }
