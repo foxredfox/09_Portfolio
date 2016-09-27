@@ -7,7 +7,7 @@ namespace _09_Portfolio
     //we will be creating here.
 
         //THESE ARE THE FIRST TESTS YOU SHOULD DO 
-
+        
     [TestClass]
     public class StockTests
     {
@@ -108,7 +108,5 @@ namespace _09_Portfolio
             Assert.IsTrue(!stock1.Equals(stock3));
             Assert.IsTrue(!stock1.Equals(stock4));
         }
-
-
     }
 }
